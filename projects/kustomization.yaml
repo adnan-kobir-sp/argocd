@@ -1,3 +1,4 @@
 namespace: argocd
 resources:
 - argo.yaml
+- ctrl-dev-use1.yaml
