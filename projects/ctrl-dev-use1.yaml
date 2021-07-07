@@ -10,4 +10,5 @@ spec:
   - namespace: '*'
     server: https://kubernetes.default.svc
   sourceRepos:
+  - https://github.com/adnan-kobir-sp/argocd.git
   - https://github.com/adnan-kobir-sp/k8s-resources.git
