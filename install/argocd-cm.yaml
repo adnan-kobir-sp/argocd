@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+data:
+  repositories: |
+    - url: https://github.com/adnan-kobir-sp/argocd.git
+      name: argocd
+      type: git
+    - url: https://github.com/adnan-kobir-sp/k8s-resources.git
+      name: k8s-resources
+      type: git

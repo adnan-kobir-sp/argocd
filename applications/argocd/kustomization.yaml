@@ -1,0 +1,5 @@
+namespace: argocd
+bases:
+- ../../install
+resources:
+- app-argocd.yaml

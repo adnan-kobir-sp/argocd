@@ -1,0 +1,7 @@
+namespace: argocd
+bases:
+- github.com/argoproj/argo-cd/manifests/cluster-install?ref=v2.0.4
+resources:
+- namespace.yaml
+patchesStrategicMerge:
+- argocd-cm.yaml
