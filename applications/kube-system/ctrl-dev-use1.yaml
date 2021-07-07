@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ctrl-dev-use1-kube-system
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: ctrl-dev-use1
+  source:
+    repoURL: https://github.com/adnan-kobir-sp/argocd.git
+    targetRevision: HEAD
+    path: applications/kube-system/apps
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kube-system
+  syncPolicy:
+    automated: {}
